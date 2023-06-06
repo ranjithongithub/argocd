@@ -1,0 +1,6 @@
+backenddeployment:
+  replicaCount: 3
+
+frontenddeployment:
+  replicaCount: 3
+
