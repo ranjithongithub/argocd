@@ -2,5 +2,5 @@ backenddeployment:
   replicaCount: 3
 
 frontenddeployment:
-  replicaCount: 5
+  replicaCount: 2
 
