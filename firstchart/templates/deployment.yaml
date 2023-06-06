@@ -31,7 +31,8 @@ spec:
         ports:
         - containerPort: 6379
           name: redis
----
+{{- end }}
+
 {{- if .Values.frontenddeployment}}
 apiVersion: apps/v1
 kind: Deployment
@@ -64,3 +65,4 @@ spec:
         env:
         - name: REDIS
           value: "azure-vote-back"
+{{- end }}
