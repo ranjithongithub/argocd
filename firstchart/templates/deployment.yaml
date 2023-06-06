@@ -1,4 +1,4 @@
-{{- if .Values.backenddeployment}}
+{{- if .Values.backenddeployment }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -34,7 +34,7 @@ spec:
           name: redis
 {{- end }}
 
-{{- if .Values.frontenddeployment}}
+{{- if .Values.frontenddeployment }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
