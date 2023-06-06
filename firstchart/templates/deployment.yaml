@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: azure-vote-back
+  namespace: backend
 spec:
   replicas: {{ .Values.backenddeployment.replicaCount }}
   selector:
@@ -38,6 +39,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: azure-vote-front
+  namespace: frontend
 spec:
   replicas: {{ .Values.frontenddeployment.replicaCount }}
   selector:
