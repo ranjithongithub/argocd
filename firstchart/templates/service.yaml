@@ -15,7 +15,7 @@ metadata:
   name: azure-vote-front
   namespace: frontend
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 80
   selector:
